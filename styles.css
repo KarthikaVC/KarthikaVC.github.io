@@ -1,0 +1,229 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+html {
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+}
+
+body {
+    margin: 0;
+    background-color: lightgrey;
+}
+/* Code for Home HTML ---- START */
+header {
+    text-align: center;
+    background-color: grey;
+    padding: 10px;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    font-size: 20px;
+    border: 1px solid gray;
+    border-bottom: 2px solid tomato;
+}
+h1 {
+    font-size: 2.5rem;
+    line-height: 2.0rem;
+    color: #fff;  
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #fff;
+}
+
+/*nav a {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+}*/
+
+a:hover {
+    color: #fda103;
+   
+}
+img {
+    max-width: 20%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    float:right;
+}
+#id-myLogoPic{
+max-width: 30%;
+height: auto;
+border-radius: 10%;
+float:left;
+}
+.about-wrapper{
+    padding: 20px;
+}
+#id-myPic{
+    width: 20%;
+    height: 0.5%;
+    border-radius: 50%;
+    float:left;
+}
+.about-wrapper h1{
+   padding-top: 5%;
+}
+
+.welcome-wrapper{
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+}
+.text-large {
+    font-size: 32px;
+    font-weight: bold;
+}
+nav {
+    max-width: 80%;
+    margin: 0 auto;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+}
+.menu-link {
+    padding: 12px 8px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-link:hover, .menu-link:focus {
+    color: blue;
+}
+/* Code for HOME HTML ---- END */
+
+/* Code for Footer Section HTML ---- START*/
+footer {
+    text-align: center;
+    background-color: gray;
+    padding: 10px;
+    color: #fff;
+}
+/* Code for Footer Section HTML ---- END*/
+
+/* Code for ABOUT HTML ---- START */
+#id-myKidPic{
+    width: 20%;
+    height: 0.5%;
+    border-radius: 50%;
+    float:left;
+    padding:10px;
+}
+.title-wrapper{
+    
+    width: 80%;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    }
+    #skills-wrapper{
+        background-color: floralwhite;
+        width:80%;
+        padding: 30px;
+        border: 2px solid burlywood;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .skill-bar {
+        width: 100%;
+        background-color: #ddd;
+      }
+      .skills {
+        text-align: right;
+        padding-top: 10px; 
+        padding-bottom: 10px; 
+        color: black; /*Font colour in skills bar*/
+        background-color:darksalmon;
+      }
+      .html {width: 80%;}
+      .css {width: 70%; } 
+      .phyton {width: 20%; } 
+      .reactJS {width: 10%; }
+/* Code for ABOUT HTML ---- END */
+
+/* Code for PROJECT HTML ---- START */
+.project-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/2 - 3px);
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.0;
+    padding: 30px;
+    justify-content: center;
+    border: 2px solid burlywood;
+}
+.proj-inner-wrapper
+{
+    border: 2px solid gold;
+    padding: 2px;
+}
+h3 {
+    font-size: 2rem;
+    line-height: 1rem;
+    padding: 20px;  
+}
+/* Code for PROJECT HTML ---- END */
+
+/* Code for Contact page HTML ---- START*/
+form {
+    margin: 50px auto;
+    width: 90%;
+}
+.form-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.form-item label {
+    flex-basis: 150px;
+    font-size: 22px;
+}
+.form-item input,
+.form-item textarea {
+    flex-basis: 50%;
+    border: 2px solid tomato;
+}
+.form-item input:hover,
+.form-item textarea:hover {
+    border: 2px solid #FA4224;
+}
+.form-item input,
+.form-item textarea,
+.form-item button {
+    border: 2px solid burlywood;
+    background-color: #FFF;
+    padding: 5px;
+    font-size: 18px;
+}
+.form-item button:hover {
+    border: 2px solid #FA4224;
+    background-color: #FA4224;
+    color: #FFF;
+}
+.form-item button {
+    width: 100px;
+}
+
+/* Code for Contact page HTML ---- END*/
+
+/* MEDIA QUERIES -- START*/
