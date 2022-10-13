@@ -22,8 +22,7 @@ header {
 }
 h1 {
     font-size: 2.5rem;
-    line-height: 2.0rem;
-    color: #fff;  
+    color: black;  
 }
 
 h2 {
@@ -32,44 +31,33 @@ h2 {
     color: #fff;
 }
 
-/*nav a {
-    margin: 10px;
-    padding: 10px;
-    width: 200px;
-    color: #fff;
-    text-decoration: none;
-    padding: 5px;
-    display: block;
-}*/
-
 a:hover {
     color: #fda103;
    
 }
 img {
-    max-width: 20%;
+    max-width: 40px;
     height: auto;
     object-fit: cover;
     object-position: bottom;
-    float:right;
+    /*float:right;*/
 }
 #id-myLogoPic{
-max-width: 30%;
+width:40px;
 height: auto;
 border-radius: 10%;
-float:left;
+/*float:left;*/
 }
 .about-wrapper{
     padding: 20px;
+    display: flex;
 }
 #id-myPic{
-    width: 20%;
-    height: 0.5%;
+    width: 300px;
+    height: auto;
     border-radius: 50%;
-    float:left;
-}
-.about-wrapper h1{
-   padding-top: 5%;
+    max-width: 400px;
+    /*float:left;*/
 }
 
 .welcome-wrapper{
@@ -78,20 +66,23 @@ float:left;
     padding: 2%;
     margin: 2%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .text-large {
     font-size: 32px;
     font-weight: bold;
 }
 nav {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
 }
 nav ul {
     list-style-type: none;
     padding: 0;
-    justify-content: center;
     display: flex;
+    justify-content: space-around;
 }
 .menu-link {
     padding: 12px 8px;
@@ -101,6 +92,18 @@ nav ul {
 
 .menu-link:hover, .menu-link:focus {
     color: blue;
+}
+/*Added with somayra help*/
+#my-id-div{
+    display: flex;
+    flex-direction: column;
+}
+.about-wrapper h1{
+padding-left: 30px;
+margin-left: 35px;
+}
+.menu-hover:hover{
+    transform: scale(2.1);
 }
 /* Code for HOME HTML ---- END */
 
@@ -114,49 +117,82 @@ footer {
 /* Code for Footer Section HTML ---- END*/
 
 /* Code for ABOUT HTML ---- START */
+.summary-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 #id-myKidPic{
-    width: 20%;
-    height: 0.5%;
+    max-width: 400px;
+    width: 300px;
+    height: auto;
     border-radius: 50%;
-    float:left;
+    /*float:left;*/
     padding:10px;
 }
-.title-wrapper{
-    
+.title-wrapper{ 
     width: 80%;
     font-size: 18px;
     text-align: justify;
     line-height: 1.5;
     padding: 20px;
+    margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-content: center;
     }
     #skills-wrapper{
-        background-color: floralwhite;
+        background-color: whitesmoke;
         width:80%;
-        padding: 30px;
+        padding: 10px;
+        margin: auto;
         border: 2px solid burlywood;
         font-size: 18px;
         display: flex;
         flex-direction: column;
         align-self: center;
     }
+    #skills-wrapper h3{
+        font-size: 2rem;
+        line-height: 1rem;
+        padding: 2px;  
+        text-align: center;
+    }
+    #skills-wrapper:hover{
+        border: 2px solid blue;
+    }
     .skill-bar {
         width: 100%;
-        background-color: #ddd;
+        background-color: lightgrey;
+      }
+      .skill-bar:hover{
+        border: 2px solid tomato;
       }
       .skills {
         text-align: right;
         padding-top: 10px; 
         padding-bottom: 10px; 
-        color: black; /*Font colour in skills bar*/
-        background-color:darksalmon;
+        color: white; /*Font colour in skills bar*/
+        background-color:black;
       }
-      .html {width: 80%;}
-      .css {width: 70%; } 
-      .phyton {width: 20%; } 
-      .reactJS {width: 10%; }
+      .html {
+        width: 80%;
+    }
+      .css {
+        width: 70%; 
+    } 
+      .python {
+        width: 20%; 
+    } 
+      .reactJS {
+        width: 10%; 
+    }
+    .h4-container:hover{
+        color: tomato;
+    }
+    .skills:hover{
+        color: tomato;
+    }
 /* Code for ABOUT HTML ---- END */
 
 /* Code for PROJECT HTML ---- START */
@@ -166,20 +202,27 @@ footer {
     width: calc(100%/2 - 3px);
     font-size: 16px;
     text-align: justify;
-    line-height: 1.0;
-    padding: 30px;
+    line-height: 1.5rem;
+    padding: 20px;
     justify-content: center;
     border: 2px solid burlywood;
+    margin:auto;/*Added with somayra help*/
 }
 .proj-inner-wrapper
 {
-    border: 2px solid gold;
+    /*border: 2px solid gold;*/
     padding: 2px;
+}
+.proj-inner-wrapper:hover{
+    border: 2px solid tomato;
 }
 h3 {
     font-size: 2rem;
     line-height: 1rem;
-    padding: 20px;  
+    padding: 2px;  
+}
+.project-wrapper:hover{
+    border: 2px solid blue;
 }
 /* Code for PROJECT HTML ---- END */
 
@@ -227,3 +270,13 @@ form {
 /* Code for Contact page HTML ---- END*/
 
 /* MEDIA QUERIES -- START*/
+@media(max-width:768px){
+    #id-myKidPic{
+        max-width: 400px;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        /*float:left;*/ 
+        padding:10px;
+    }
+}
