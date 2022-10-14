@@ -1,8 +1,10 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     background-color: #fff;
 }
 
@@ -36,21 +38,20 @@ a:hover {
    
 }
 img {
-    max-width: 40px;
+    max-width: 20px;
     height: auto;
     object-fit: cover;
     object-position: bottom;
-    /*float:right;*/
 }
 #id-myLogoPic{
-width:40px;
+width: 20px;
 height: auto;
 border-radius: 10%;
-/*float:left;*/
 }
 .about-wrapper{
     padding: 20px;
     display: flex;
+    flex-direction: column;
 }
 #id-myPic{
     width: 300px;
@@ -93,14 +94,15 @@ nav ul {
 .menu-link:hover, .menu-link:focus {
     color: blue;
 }
-/*Added with somayra help*/
+
 #my-id-div{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .about-wrapper h1{
 padding-left: 30px;
-margin-left: 35px;
+margin-left: 30px;
 }
 .menu-hover:hover{
     transform: scale(2.1);
@@ -126,8 +128,7 @@ footer {
     max-width: 400px;
     width: 300px;
     height: auto;
-    border-radius: 50%;
-    /*float:left;*/
+    border-radius: 30px 30px 30px 30px;
     padding:10px;
 }
 .title-wrapper{ 
@@ -138,7 +139,7 @@ footer {
     padding: 20px;
     margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: center;
     }
     #skills-wrapper{
@@ -238,12 +239,14 @@ form {
     padding: 5px;
 }
 .form-item label {
-    flex-basis: 150px;
+    flex-basis: 100px;
+    padding: 10px;
     font-size: 22px;
 }
 .form-item input,
 .form-item textarea {
     flex-basis: 50%;
+    flex-direction: column;/*This fixed issue relating text area reducing size in mobile screen size*/
     border: 2px solid tomato;
 }
 .form-item input:hover,
@@ -270,13 +273,53 @@ form {
 /* Code for Contact page HTML ---- END*/
 
 /* MEDIA QUERIES -- START*/
-@media(max-width:768px){
+
+/* Added this query as part of Mobile screen size variations. Changed based on comments given by mentor. 
+Leaving it here for future reference.
+
+@media(max-width: 600px){
     #id-myKidPic{
-        max-width: 400px;
-        width: 400px;
-        height: 400px;
-        border-radius: 50%;
-        /*float:left;*/ 
-        padding:10px;
+        max-width: 200px;
+        height: 200px;
     }
+    .title-wrapper{ font-size: 16px;}
+    #skills-wrapper h3{font-size: 1.5rem;}
+    #id-myPic{
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+        max-width: 250px;
+    }
+    .welcome-wrapper{
+        font-size: 1rem;
+        line-height: 2rem;
+        padding: 1%;
+        margin: 1%;
+    }
+    .text-large {font-size: 16px;}
+    h1 {font-size: 1rem;}
+    #id-myLogoPic{
+        width:20px;
+        height: auto;
+    }
+    img{max-width: 20px;}
+    header{font-size: 15px;}
+    .form-item textarea {
+        flex-basis: 70%;
+        
+    }
+}*/
+
+@media(min-width:767px){
+
+.about-wrapper {flex-direction: row;}
+
+#id-myLogoPic{width: 40px;}
+
+img {max-width: 40px;}
+
+#id-myKidPic{ border-radius: 50%;}  
+
+.title-wrapper {flex-direction: row;}
+
 }
