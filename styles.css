@@ -9,6 +9,7 @@ html {
 body {
     margin: 0;
     background-color: lightgrey;
+    height: 150vh;/*Adding to bring index.html and contact .html page body section to full length*/
 }
 /* Code for Home HTML ---- START */
 header {
@@ -114,6 +115,11 @@ footer {
     padding: 10px;
     color: #fff;
 }
+#footer_full_size{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}/*Adding these to make index.html and contact page.html to sit in bottom of page*/
 /* Code for Footer Section HTML ---- END*/
 
 /* Code for ABOUT HTML ---- START */
