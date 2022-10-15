@@ -163,15 +163,9 @@ footer {
         padding: 2px;  
         text-align: center;
     }
-    #skills-wrapper:hover{
-        border: 2px solid blue;
-    }
     .skill-bar {
         width: 100%;
         background-color: lightgrey;
-      }
-      .skill-bar:hover{
-        border: 2px solid tomato;
       }
       .skills {
         text-align: right;
@@ -191,12 +185,6 @@ footer {
     } 
       .reactJS {
         width: 10%; 
-    }
-    .h4-container:hover{
-        color: tomato;
-    }
-    .skills:hover{
-        color: tomato;
     }
 /* Code for ABOUT HTML ---- END */
 
@@ -225,9 +213,6 @@ h3 {
     font-size: 2rem;
     line-height: 1rem;
     padding: 2px;  
-}
-.project-wrapper:hover{
-    border: 2px solid blue;
 }
 /* Code for PROJECT HTML ---- END */
 
