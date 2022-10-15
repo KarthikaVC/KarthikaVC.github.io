@@ -104,8 +104,12 @@ nav ul {
 width:100%;
 text-align: center;
 }
+.menu-hover{
+    transition-property: width height;
+    transition-duration: 1s;
+}
 .menu-hover:hover{
-    transform: scale(2.1);
+    transform: scale(2.1);   
 }
 /* Code for HOME HTML ---- END */
 
@@ -220,7 +224,7 @@ h3 {
 /* Code for Contact page HTML ---- START*/
 form {
     margin: 50px auto;
-    width: 90%;
+    width: 70%;/*Changing to fix text area*/
 }
 .form-item {
     display: flex;
@@ -236,8 +240,8 @@ form {
 .form-item input,
 .form-item textarea {
     flex-basis: 50%;
-    flex-direction: column;/*This fixed issue relating text area reducing size in mobile screen size*/
     border: 2px solid tomato;
+    flex-grow: 1;/*This fixed issue relating text area reducing size in mobile screen size*/
 }
 .form-item input:hover,
 .form-item textarea:hover {
@@ -311,5 +315,6 @@ img {max-width: 40px;}
 #id-myKidPic{ border-radius: 50%;}  
 
 .title-wrapper {flex-direction: row;}
+form{width:700px;}/*Adding changes for text area issue*/
 
 }
