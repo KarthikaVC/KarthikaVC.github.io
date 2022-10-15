@@ -9,7 +9,7 @@ html {
 body {
     margin: 0;
     background-color: lightgrey;
-    height: 150vh;/*Adding to bring index.html and contact .html page body section to full length*/
+    min-height: 150vh;/*Adding to bring index.html and contact .html page body section to full length*/
 }
 /* Code for Home HTML ---- START */
 header {
