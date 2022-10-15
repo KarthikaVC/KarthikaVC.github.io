@@ -305,7 +305,7 @@ Leaving it here for future reference.
 }*/
 
 @media(min-width:767px){
-
+header{font-size: 22px;}
 .about-wrapper {flex-direction: row;}
 
 #id-myLogoPic{width: 40px;}
