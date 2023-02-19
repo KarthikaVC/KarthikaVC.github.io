@@ -3,58 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio - Projects page</title>
-        <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Karthika - Projects Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        
-        <nav>
-            <ul>
-                <li><a class="menu-link" href="index.html">
-                    <img src="images/letter-k.png" alt="My_Logo_picture" id="id-myLogoPic" class="menu-hover">
-                </a></li>
-                <li><a class="menu-link" href="about.html">About</a></li>
-                <li><a class="menu-link" href="project.html">Projects</a></li>
-                <li><a class="menu-link" href="contactpage.html">Contact</a></li>
-                <li><a class="menu-link" href="https://www.linkedin.com/in/karthika-v-chellapathi" target="_blank">
-                    <img src="images/linkedin.png" alt="linkedin logo" class="menu-hover">
-                </a></li>
-                <li><a class="menu-link" href="https://karthikavc.github.io/" target="_blank">
-                    <img src="images/github.png" alt="gitHub logo" class="menu-hover">
-                </a></li>
-             </ul> 
-        </nav>  
-    </header><br>
-        <div class="project-wrapper">
-            <h3>My Projects</h3>
-                <h4>Project Name A </h4>          
-                <div class="proj-inner-wrapper">
-                    Lorem ipsum dolor sit amet. CSS about my used used i project HTML about used HTML. I HTML project about is about about. Is about HTML is have have CSS used used. I about CSS about my HTML is HTML HTML is about.
-                    My HTML project my have about my used? CSS project have my project i about CSS HTML have i HTML have my have about. I HTML my have project about used is HTML have my project about CSS.
-                    About my have project my used project my is used used. I have about HTML i HTML CSS used. I have have is project used used have i used used CSS used i about used project.<a href="">See More</a>
-                </div>
-                <h4>Project Name B</h4>              
-                <div class="proj-inner-wrapper">
-                    Lorem ipsum dolor sit amet. CSS about my used used i project HTML about used HTML. I HTML project about is about about. Is about HTML is have have CSS used used. I about CSS about my HTML is HTML HTML is about.
-                    My HTML project my have about my used? CSS project have my project i about CSS HTML have i HTML have my have about. I HTML my have project about used is HTML have my project about CSS.
-                    About my have project my used project my is used used. I have about HTML i HTML CSS used. I have have is project used used have i used used CSS used i about used project. <a href="">See More</a>
-                </div>               
-                <h4>Project Name C</h4>
-                <div class="proj-inner-wrapper">
-                    Lorem ipsum dolor sit amet. CSS about my used used i project HTML about used HTML. I HTML project about is about about. Is about HTML is have have CSS used used. I about CSS about my HTML is HTML HTML is about.
-                    My HTML project my have about my used? CSS project have my project i about CSS HTML have i HTML have my have about. I HTML my have project about used is HTML have my project about CSS.
-                    About my have project my used project my is used used. I have about HTML i HTML CSS used. I have have is project used used have i used used CSS used i about used project. <a href="">See More</a>
-                </div>             
-                <h4>Project Name D</h4>              
-                <div class="proj-inner-wrapper">
-                    Lorem ipsum dolor sit amet. CSS about my used used i project HTML about used HTML. I HTML project about is about about. Is about HTML is have have CSS used used. I about CSS about my HTML is HTML HTML is about.
-                    My HTML project my have about my used? CSS project have my project i about CSS HTML have i HTML have my have about. I HTML my have project about used is HTML have my project about CSS.
-                    About my have project my used project my is used used. I have about HTML i HTML CSS used. I have have is project used used have i used used CSS used i about used project.<a href="">See More</a>
-                </div> 
-        </div> <br><br>
-    <footer>&copy; 2022 Karthika</footer>
+    <div> 
+        <div class="container">
+            <nav>
+                <a href="index.html"><img src="images/pic_cartoon.jpeg" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Projects</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <!-- <img src="images/icon_close_window.png" class="menu-class-icon" onclick="closemenu()"> -->
+                </ul>
+                <!-- <img src="images/icon_menu.png" class="menu-class-icon" onclick="openmenu()"> -->
+            </nav>
+            <div class="project-header">
+                <h1>My Latest works</h1>
+            </div>
+        </div>
+    </div>
+<div>
+<div class="container">
+    <div class="project-wrapper">         
+        <div class="proj-inner-wrapper">
+                <img  id="proj-img" src="images/weather_proj.png">
+                <h3>Python Weather App</h3>
+                <p>A Weather application built on Python to get the weather data after processing huge json data.</p>
+            <div class="icons-wrapper">
+                <nav>
+                    <ul>
+                        <li><img src="images/python-logo.svg" class="icon-tool"></li>
+                        <li>
+                            <a href="https://github.com/KarthikaVC/she-codes-python-weather-project-KarthikaVC" target="_blank">
+                                <img src="images/external-link.png" class="icon-tool">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+            <div class="proj-inner-wrapper">
+                <img  id="proj-img" src="images/SheCodes_News.png">
+                <h3>SheCodes News App</h3>
+                <p>A News application built on Django to display news written by different author.</p>
+            <div class="icons-wrapper">
+                <nav>
+                    <ul>
+                        <li><img src="images/python-logo.svg" class="icon-tool"></li>
+                        <li><img src="images/django-logo-positive.png" class="icon-tool"></li>
+                        <li>
+                            <a href="https://github.com/KarthikaVC/she-codes-django-news-project-KarthikaVC" target="_blank">
+                                <img src="images/external-link.png" class="icon-tool">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+            <div class="proj-inner-wrapper">
+                <img  id="proj-img" src="images/crowdfund_backend.png">
+                <h3>Crowdfunding App</h3>
+                <p>This application built on Django Rest framework to build crowdfunding for unpriviledged students.</p>
+            <div class="icons-wrapper">
+                <nav>
+                    <ul>
+                        <li><img src="images/python-logo.svg" class="icon-tool"></li>
+                        <li><img src="images/django-rest-framework.jpg" class="icon-tool"></li>
+                        <li>
+                            <a href="https://github.com/KarthikaVC/she-codes-crowdfunding-api-project-KarthikaVC" target="_blank">
+                                <img src="images/external-link.png" class="icon-tool">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+            <div class="proj-inner-wrapper">
+                <img  id="proj-img" src="images/weather_proj.png">
+                <h3>Python Weather App</h3>
+                <p>A Weather application built on Python to get the weather data after processing huge json data.</p>
+            <div class="icons-wrapper">
+                <nav>
+                    <ul>
+                        <li><img src="images/python-logo.svg" class="icon-tool"></li>
+                        <li>
+                            <a href="" target="_blank">
+                                <img src="images/external-link.png" class="icon-tool">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="footer_full_size">
+    <p>&copy; 2022 Karthika</p>
+</div> -->
+</div>
+
 </body>
 </html>

@@ -1,320 +1,486 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-html {
-    font-family: 'Roboto Slab', sans-serif;
-    background-color: #fff;
-}
-
-body {
+*{
     margin: 0;
-    background-color: lightgrey;
-    min-height: 150vh;/*Adding to bring index.html and contact .html page body section to full length*/
-}
-/* Code for Home HTML ---- START */
-header {
-    text-align: center;
-    background-color: grey;
-    padding: 10px;
-    font-family: 'Noto Sans', Arial, sans-serif;
-    font-size: 20px;
-    border: 1px solid gray;
-    border-bottom: 2px solid tomato;
-}
-h1 {
-    font-size: 2.5rem;
-    color: black;  
-}
-
-h2 {
-    font-size: 3rem;
-    line-height: 3rem;
-    color: #fff;
-}
-
-a:hover {
-    color: #fda103;  
-}
-img {
-    max-width: 20px;
-    height: auto;
-    object-fit: cover;
-    object-position: bottom;
-}
-#id-myLogoPic{
-width: 20px;
-height: auto;
-border-radius: 10%;
-}
-.about-wrapper{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-#id-myPic{
-    width: 300px;
-    height: auto;
-    border-radius: 50%;
-    max-width: 400px;
-    /*float:left;*/
-}
-
-.welcome-wrapper{
-    font-size: 2rem;
-    line-height: 2rem;
-    padding: 2%;
-    margin: 2%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.text-large {
-    font-size: 32px;
-    font-weight: bold;
-}
-nav {
-    max-width: 100%;
-    margin: 0 auto;
-}
-nav ul {
-    list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: space-around;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+} 
+/*Adding this HTML to make the scroll options for menu to their respectives Menu titles.*/
+html{
+    scroll-behavior: smooth;
 }
-.menu-link {
-    padding: 12px 8px;
-    color: black;
-    text-decoration: none;
+body{
+    background: #000000;
+    color: #FFFFFF;
 }
-
-.menu-link:hover, .menu-link:focus {
-    color: blue;
-    font-size: 28px;
-    text-shadow: 0 0 20px rgba(255,255,255,50%);
-}
-
-#my-id-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.about-wrapper h1{
-width:100%;
-text-align: center;
-}
-.menu-hover{
-    transition-property: width height;
-    transition-duration: 1s;
-}
-.menu-hover:hover{
-    transform: scale(2.1);   
-}
-/* Code for HOME HTML ---- END */
-
-/* Code for Footer Section HTML ---- START*/
-footer {
-    text-align: center;
-    background-color: gray;
-    padding: 10px;
-    color: #fff;
-}
-#footer_full_size{
-    position: fixed;
-    bottom: 0px;
+#header{
     width: 100%;
-}/*Adding these to make index.html and contact page.html to sit in bottom of page*/
-/* Code for Footer Section HTML ---- END*/
+    height: 100vh;
+/* background-image: url(image000000000000s/background1.jpg);
+    background-size: cover;
+    background-position: center;*/
+}
 
-/* Code for ABOUT HTML ---- START */
-.summary-wrapper{
+.container{
+    padding: 10px 10%;
+}
+/* .navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+nav {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-#id-myKidPic{
-    max-width: 400px;
-    width: 300px;
-    height: auto;
-    border-radius: 30px 30px 30px 30px;
-    padding:10px;
+
+.logo{
+    width: 130px;
+    border-radius: 50px;
+
 }
-.title-wrapper{ 
-    width: 80%;
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+color: #FFFFFF;
+text-decoration: none; /*This removes underline under the link */
+font-size: 18px;
+position: relative;  /*Added this as relative as we gave below in after block position as absolute: UNDERSTAND MORE */
+}
+/*Details for link after it displayes  to do hover effects*/
+nav ul li a::after{
+    content: '';
+    width: 0;/*Now change this from 100% to 0 as we want to show line only when we bring cursor on link , so change from 100% to 0*/
+    height: 3px;
+    background: #FBA92C;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition:  0.5s;/*Added this after adding below hover to get transition effect in line*/
+}
+nav ul li a:hover::after{
+    width: 100%;/*Now whenever we hover only that line will come to 100%*/
+} 
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+
+}
+.header-text h1 span{
+color: #FBA92C;
+}
+div p.header-text{
+    color: #FBA92C;
+}
+/*About Section */
+#about{
+padding: 80px 0;
+color:   #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*All this is to image on right side and next on left side */
+}
+.about-col-1{
+    flex-basis: 35%;/*This means the width of the column in 35%*/
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;  /*here 60% and above we gave 35% for about-col1 so that we have 5% gap between both column */
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tab-links{
+    margin-right: 50px;
     font-size: 18px;
-    text-align: justify;
-    line-height: 1.5;
-    padding: 20px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    }
-    #skills-wrapper{
-        background-color: whitesmoke;
-        width:80%;
-        padding: 10px;
-        margin: auto;
-        border: 2px solid burlywood;
-        font-size: 18px;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-    }
-    #skills-wrapper h3{
-        font-size: 2rem;
-        line-height: 1rem;
-        padding: 2px;  
-        text-align: center;
-    }
-    .skill-bar {
-        width: 100%;
-        background-color: lightgrey;
-      }
-      .skills {
-        text-align: right;
-        padding-top: 10px; 
-        padding-bottom: 10px; 
-        color: white; /*Font colour in skills bar*/
-        background-color:black;
-      }
-      .html {
-        width: 80%;
-    }
-      .css {
-        width: 70%; 
-    } 
-      .python {
-        width: 20%; 
-    } 
-      .reactJS {
-        width: 10%; 
-    }
-/* Code for ABOUT HTML ---- END */
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #FBA92C;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
 
-/* Code for PROJECT HTML ---- START */
-.project-wrapper{
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+color:  #FBA92C;
+font-size: 14px;  
+}
+.tab-contents{
+    display: none; /*But now everything is hidden so we add another class name nex to tab-contents in HTML for this */
+}
+.tab-contents.active-tab{
+    display: block;/*It is visible only for Skills section now*/
+    /*Now to make it display for based on tab we click , we add onclick event in each tab name in HTML file
+    and then we pass parameter skills inside the function Open. 
+    this parameter has to be then used as an ID element in the tab content section. */
+}
+
+/*Watched until 42:35 in video continue from there */
+
+
+/*Adding Css for Services List*/
+#services{
+    padding: 30px 0;
+
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px; /*grid-gap: 40px*/
+    margin-top: 50px;
+}  
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    /*We have added this line after adding the  hover property below*/
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #FBA92C;
+    transform:  translateY(-10px); /*We add this property so that we can move the box a little bit up when we hover over it. */
+}
+
+/*Adding Css for Work Menu*/
+#portfolio{
+padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px; /*grid-gap: 40px*/
+    margin-top: 50px; 
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;/*This we made intially 100% , Now we change to 0 as we need the pink layout on top only when the cursor comes over it.  */
+    background: linear-gradient(rgba(0,0,0,0.6),#FBA92C);
+    border-radius: 10px;
+    /*This wll give gradient on top of image*/
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    /*This is to add the text in center.*/
     display: flex;
-    flex-direction: column;
-    width: calc(100%/2 - 3px);
-    font-size: 16px;
-    text-align: justify;
-    line-height: 1.5rem;
-    padding: 20px;
+    align-items: center;
     justify-content: center;
-    border: 2px solid burlywood;
-    margin:auto;/*Added with somayra help*/
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px; /*Changing the for size for desc text */
+
+    /*Adding this after adding hover effect below .work:hover .layer{  , so that we hover the height comes slowly with transition effects */
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 50;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #FBA92C;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+/*Adding this to make image look big when we hover over it. Also we add the transition effects on .work img properties.*/
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #FBA92C;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #FBA92C;
+}
+/*Adding Css for Contact Form */
+.contact-left{
+    flex-basis: 35%;
+
+}
+.contact-right{
+    flex-basis: 60%;
+
+}
+.contact-left p{
+    margin-top: 30px;
+
+}
+.contact-left p img{
+    color: #FBA92C;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a img{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a img:hover{
+    background-color:#FBA92C;
+    border-radius: 10px; /*Added by own as not using I tag as them */
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: #FBA92C;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline : none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/*Adding code for Hamburger Menu */
+.menu-class-icon{
+    display: none;
+
+}
+
+/* Adding code for Project Page */
+.project-header{
+    margin-top: 5%;
+    font-size: 26px;
+}
+.project-wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-gap :10px 10px;
+    padding: 10px;
+    max-height: 200px;
 }
 .proj-inner-wrapper
 {
-    /*border: 2px solid gold;*/
-    padding: 2px;
+    border: 2px solid gold;
+    padding: 10px 5%;
 }
-.proj-inner-wrapper:hover{
-    border: 2px solid tomato;
+#proj-img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
 }
-h3 {
-    font-size: 2rem;
-    line-height: 1.5rem;
-    padding: 2px;  
+.icons-wrapper{
+    margin-top: 30px;
 }
-/* Code for PROJECT HTML ---- END */
-
-/* Code for Contact page HTML ---- START*/
-form {
-    margin: 50px auto;
-    width: 70%;/*Changing to fix text area*/
+.proj-inner-wrapper p{
+    padding-top: 10px;
 }
-.form-item {
+.proj-inner-wrapper h3{
+    padding-top: 5px;
+    color: #FBA92C;
+}
+.icons-wrapper nav{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.icons-wrapper nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.icon-tool{
+    width: 30px;
+    border-radius: 10px;
+}
+.icons-wrapper nav ul li a{
+text-decoration: none;
+position: relative;
+}
+
+.footer_full_size{
+    position: fixed;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    bottom: 0px;
+    width: 100%;
+}
+
+/*CSS for small screen that is from screen width from 0 to maximum 600*/
+@media only screen and (max-width: 600px){
+
+.header-text {
+    margin-top: 100%;
+    font-size: 16px;
+}
+.header-text h1{
+    font-size: 30px;
+}
+.menu-class-icon{
+    display: block;
+    font-size: 25px;
+}
+nav ul {
+    background: #FBA92C;
+    position: fixed;
+    top: 0;
+    right: -200px; /*Now changing this to -200px as we are going to hide this menu bar and dosplay only when we click on menu icon*/
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2; /*Added this before doing java sctipt call for hinding the menu icon . But exact reason not known */
+    transition: 0.5s; /*Adding transition to move the side menu slowly from right */
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+nav ul .menu-class-icon{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+.sub-title{
+    font-size: 40px;
+}
+.about-col-1,.about-col-2{
+    flex-basis: 100%;
+}
+.about-col-1{
+    margin-bottom: 30px;
+}
+.about-col-2{
+    font-size: 14px;
+}
+.tab-links{
+    font-size: 16px;
+    margin-right: 20px;
+}
+.contact-left,.contact-right{
+    flex-basis: 100%;
+
+}
+.copyright{
+    font-size: 14px;
+}
+
+.project-header{
+    margin-top: 5%;
+    font-size: 16px;
+}
+.project-wrapper{
+    display: block;
+    margin:10px;
     padding: 5px;
 }
-.form-item label {
-    flex-basis: 100px;
-    padding: 10px;
-    font-size: 22px;
 }
-.form-item input,
-.form-item textarea {
-    flex-basis: 50%;
-    border: 2px solid tomato;
-    flex-grow: 1;/*This fixed issue relating text area reducing size in mobile screen size*/
-}
-.form-item input:hover,
-.form-item textarea:hover {
-    border: 2px solid #FA4224;
-}
-.form-item input,
-.form-item textarea,
-.form-item button {
-    border: 2px solid burlywood;
-    background-color: #FFF;
-    padding: 5px;
-    font-size: 18px;
-}
-.form-item button:hover {
-    border: 2px solid #FA4224;
-    background-color: #FA4224;
-    color: #FFF;
-}
-.form-item button {
-    width: 100px;
-    color: black;
-}
-/* Code for Contact page HTML ---- END*/
 
-/* MEDIA QUERIES -- START*/
-
-/* Added this query as part of Mobile screen size variations. Changed based on comments given by mentor. 
-Leaving it here for future reference.
-
-@media(max-width: 600px){
-    #id-myKidPic{
-        max-width: 200px;
-        height: 200px;
-    }
-    .title-wrapper{ font-size: 16px;}
-    #skills-wrapper h3{font-size: 1.5rem;}
-    #id-myPic{
-        width: 200px;
-        height: auto;
-        border-radius: 50%;
-        max-width: 250px;
-    }
-    .welcome-wrapper{
-        font-size: 1rem;
-        line-height: 2rem;
-        padding: 1%;
-        margin: 1%;
-    }
-    .text-large {font-size: 16px;}
-    h1 {font-size: 1rem;}
-    #id-myLogoPic{
-        width:20px;
-        height: auto;
-    }
-    img{max-width: 20px;}
-    header{font-size: 15px;}
-    .form-item textarea {
-        flex-basis: 70%;
-        
-    }
-}*/
-
-@media(min-width:767px){
-header{font-size: 22px;}
-.about-wrapper {flex-direction: row;}
-
-#id-myLogoPic{width: 40px;}
-
-img {max-width: 40px;}
-
-#id-myKidPic{ border-radius: 50%;}  
-
-.title-wrapper {flex-direction: row;}
-form{width:700px;}/*Adding changes for text area issue*/
-
-}

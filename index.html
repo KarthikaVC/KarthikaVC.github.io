@@ -3,44 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio about page</title>
-        <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Karthika - My Portfolio Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        
-            <nav>
-                <ul>
-                    <li><a class="menu-link" href="index.html">
-                        <img src="images/letter-k.png" alt="My_Logo_picture" id="id-myLogoPic" class="menu-hover">
-                    </a></li>
-                    <li><a class="menu-link" href="about.html">About</a></li>
-                    <li><a class="menu-link" href="project.html">Projects</a></li>
-                    <li><a class="menu-link" href="contactpage.html">Contact</a></li>
-                    <li><a class="menu-link" href="https://www.linkedin.com/in/karthika-v-chellapathi" target="_blank">
-                        <img src="images/linkedin.png" alt="linkedin logo" class="menu-hover">
-                    </a></li>
-                    <li><a class="menu-link" href="https://karthikavc.github.io/" target="_blank">
-                        <img src="images/github.png" alt="gitHub logo" class="menu-hover">
-                    </a></li>
-                 </ul> 
-            </nav>  
-        </header>
-
-<div class="about-wrapper">
-    <div id="my-id-div">
-        <img src="images/myPic.jpg" alt="My_Picture" id="id-myPic">
-        <h1>Karthika</h1>
+    <div id="header"> 
+        <div class="container">
+            <!-- <div class="navbar"> -->
+                <nav>
+                <a href="#header"><img src="images/pic_cartoon.jpeg" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img src="images/icon_close_window.png" class="menu-class-icon" onclick="closemenu()">
+                </ul>
+                <img src="images/icon_menu.png" class="menu-class-icon" onclick="openmenu()">
+            </nav>
+        <!-- </div> -->
+            <div class="header-text">
+                <p class="header-text">Software Developer</p>
+                <h1>Hi , I'm <span>Karthika</span> <br>based in Perth</h1>
+            </div>
+        </div>
     </div>
-      
-    <div class="welcome-wrapper">
-        <p class="text-large">Welcome to my page!</p>
-        <p>I am a Front-end Developer based in Perth.</p>
+    <!--About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Mum_boys.jpeg">
+                </div>
+                <div class="about-col-2 ">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a Computer Science Engineer, mum of 2 boys and an education assistant working hard to reboot my software career after a career break. With my past work experience as Software Developer and with current Australian work experience as an Education Assistant in high school, I am updating my technical skills to get job opportunities in software industry that matches my educational background.<br><br>
+                        Currently, I am part of the SheCodes Plus 2022 program on Emergence Scholarship to improvise my technical skills for my professional and educational development.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML/CSS</span><br>Designing Web / App interfaces</li>
+                                <li><span>Python</span><br>Designing Web / App interfaces</li>
+                                <li><span>Django Rest API</span><br>Designing Web / App interfaces</li>
+                                <li><span>JAVA</span><br>Designing Web / App interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Feb 2022 – Current</span><br>Education Assistant - Leeming SHS Education Support Centre</li>
+                                <li><span>Nov 2021 – Mar 2022</span><br>Education Assistant - Armadale Education Support Centre</li>
+                                <li><span>Nov 2009 – Nov 2013</span><br>System Engineer - TATA Consultancy Services Ltd</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2010-2012</span><br>Masters in Software Systems</li>
+                                <li><span>2009-2013</span><br>Bachelors in Computer Science Engineering</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--------- Portfolio---------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/weather_proj.png">
+                <div class="layer">
+                    <h3>Weather App - Python</h3>
+                    <p>This app helps to get Weather details of a location</p>
+                    <a href="project.html"><img src="images/icon_view-more.png" alt=""></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/SheCodes_News.png">
+                <div class="layer">
+                    <h3>SheCodes News App - Django</h3>
+                    <p>This project is to build a News application using Django </p>
+                    <a href="project.html"><img src="images/icon_view-more.png" alt=""></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/crowdfund_backend.png">
+                <div class="layer">
+                    <h3>CrowdFunding App - Django Rest Framework</h3>
+                    <p>This project was to generate crowdfunding application page using Django Rest Framework.</p>
+                    <a href="project.html"><img src="images/icon_view-more.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <a href="project.html" class="btn">See More</a>
     </div>
 </div>
-    <footer id="footer_full_size">&copy; 2022 Karthika</footer>
+<!--------- Contact Form---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><img src="images/icon_mail.png">karthikav.rmkcse@gmail.com</p>
+                <p><img src="images/icon_mobile.png">+61 472688120</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/karthika-v-chellapathi" target="_blank"><img src="images/icon_linkedin_circle.png"></a>
+                </div>
+                <a href="images/KarthikaVC_Resume.pdf" download class="btn btn2" target="_blank">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="contactForm" action="https://formspree.io/f/xgeqzppe" method="post" target="_blank">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <input type="button" class="btn btn2" value="submit" onclick="submit_form();" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2022 Karthika</p>
+    </div>
+</div>
 
+    <script>
+
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabname){
+            for(t of tablinks){
+                t.classList.remove("active-link")
+            }
+
+            
+            for(t of tabcontents){
+                t.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add('active-tab')
+
+        }
+    </script>
+    <script>
+        var sideBar = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sideBar.style.right = "0";
+        }
+        function closemenu(){
+            sideBar.style.right = "-200px";
+        }
+        
+    </script>
+
+    <script>
+        function submit_form(){
+            document.contactForm.submit();
+            document.contactForm.reset();
+        }
+    </script>
 </body>
-</html>
+</html> 
