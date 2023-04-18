@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
+    font-family: 'Roboto',sans-serif;
+    line-height: 1.6;
 } 
 /*Adding this HTML to make the scroll options for menu to their respectives Menu titles.*/
 html{
@@ -155,9 +158,6 @@ font-size: 14px;
     this parameter has to be then used as an ID element in the tab content section. */
 }
 
-/*Watched until 42:35 in video continue from there */
-
-
 /*Adding Css for Services List*/
 #services{
     padding: 30px 0;
@@ -202,7 +202,7 @@ padding: 50px 0;
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px; /*grid-gap: 40px*/
+    grid-gap: 40px;
     margin-top: 50px; 
 }
 .work{
@@ -308,7 +308,7 @@ padding: 50px 0;
 }
 .social-icons a img:hover{
     background-color:#FBA92C;
-    border-radius: 10px; /*Added by own as not using I tag as them */
+    border-radius: 10px;
     transform: translateY(-5px);
 }
 .btn.btn2{
@@ -347,7 +347,6 @@ form .btn2{
 /*Adding code for Hamburger Menu */
 .menu-class-icon{
     display: none;
-
 }
 
 /* Adding code for Project Page */
